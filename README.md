@@ -1,1 +1,1 @@
-# Dummy library to test conda recipies
+# Dummy library to test conda recipes
