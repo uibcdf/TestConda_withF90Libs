@@ -20,13 +20,13 @@ ext_math = Extension(
 )
 
 setup(
-    name='gamusino',
+    name='vector_normalization',
     version='1.0',
     author='UIBCDF Lab',
     author_email='uibcdf@gmail.com',
-    package_dir={'gamusino': 'gamusino'},
+    package_dir={'vector_normalization': 'vector_normalization'},
     packages=find_packages(),
-    package_data={'gamusino': [], '': ['*.f90']},
+    package_data={'vector_normalization': [], '': ['*.f90']},
     ext_modules=[ext_math],
     url='http://uibcdf.org',
     download_url ='https://github.com/uibcdf/TestsConda',
