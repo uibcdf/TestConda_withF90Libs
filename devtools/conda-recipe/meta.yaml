@@ -1,5 +1,5 @@
 package:
-  name: gamusino
+  name: vector_normalization
   version: 1.0
 
 source:
@@ -24,5 +24,5 @@ about:
   summary: ""
   description: |
     This library provides a simple test case to see how a package is uploaded to conda.
-  dev_url: https://github.com/uibcdf/TestsConda
+  dev_url: https://github.com/uibcdf/TestsConda_withF90Libs
   doc_url: https://uibcdf.org
