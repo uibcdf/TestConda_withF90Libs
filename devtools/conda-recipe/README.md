@@ -14,7 +14,7 @@ conda build .
 ## If you need to check the package path:
 # conda build . --output
 anaconda login
-anaconda upload --user uibcdf /path/to/conda-package.tar.bz2
+anaconda upload /path/to/conda-package.tar.bz2
 ### Or if the package is uploaded to an organization account https://anaconda.org/YourOrg
 # anaconda upload --user YourOrg /path/to/conda-package.tar.bz2
 conda build purge
