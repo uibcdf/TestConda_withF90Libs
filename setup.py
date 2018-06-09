@@ -12,25 +12,24 @@ from numpy.distutils.core import setup
 from numpy.distutils.extension import Extension
 
 ext_math = Extension(
-    name = 'lib.libmath',
+    name = 'vector_normalization.lib.libmath',
     extra_compile_args = [],
     libraries = [],
     language = 'f90',
-    sources = ['lib/libmath.f90'],
+    sources = ['vector_normalization/lib/libmath.f90'],
 )
 
 setup(
     name='vector_normalization',
     version='1.0',
-    author='UIBCDF Lab',
+    author='Diego Prada | UIBCDF Lab',
     author_email='uibcdf@gmail.com',
     package_dir={'vector_normalization': 'vector_normalization'},
-    packages=find_packages(),
-    package_data={'vector_normalization': [], '': ['*.f90']},
+    packages=setuptools.find_packages(),
     ext_modules=[ext_math],
     url='http://uibcdf.org',
-    download_url ='https://github.com/uibcdf/TestsConda',
+    download_url ='https://github.com/uibcdf/TestConda_withF90Libs',
     license='MIT',
-    description="doc to be written",
-    long_description="long doc to be written",
+    description="Sample case python package with f90 libs.",
+    long_description="Sample case showing how to distribute a python package with fortran f90 libraries in conda.",
 )

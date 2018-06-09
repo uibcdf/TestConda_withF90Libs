@@ -6,14 +6,17 @@
 conda install anaconda-client conda-build
 ```
 
-## Building and pushing to https://anaconda.org/uibcdf
+## Building and pushing the package to https://anaconda.org/YourUser
 
 ```bash
 conda config --set anaconda_upload no
 conda build .
-conda build . --output # If needed
+## If you need to check the package path:
+# conda build . --output
 anaconda login
 anaconda upload --user uibcdf /path/to/conda-package.tar.bz2
+### Or if the package is uploaded to an organization account https://anaconda.org/YourOrg
+# anaconda upload --user YourOrg /path/to/conda-package.tar.bz2
 conda build purge
 anaconda logout
 ```
