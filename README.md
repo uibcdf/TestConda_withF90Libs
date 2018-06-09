@@ -10,7 +10,7 @@ Any comment is appreciated.
 
 ### Manually testing the package
 
-The fortran code can be compiled manually and the package locally invoked to run a first test:
+The fortran code can be compiled manually with f2py and the package locally invoked to run a first test:
 
 ```bash
 cd extra
